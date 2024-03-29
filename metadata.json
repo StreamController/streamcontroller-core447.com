@@ -1,0 +1,11 @@
+{
+  "name": "StreamController Integration",
+  "description": "Allow automatic page switching in StreamController",
+  "uuid": "streamcontroller@core447.com",
+  "shell-version": [
+    "45",
+    "46"
+  ],
+  "url": "https://github.com/Core447/streamcontroller@core447.com",
+  "version": 1
+}
