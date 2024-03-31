@@ -82,7 +82,6 @@ class StreamControllerExtension extends Extension {
             title : title
         }
         this._dbusImpl.emit_signal('FocusedWindowChanged', new GLib.Variant('(s)', [JSON.stringify(result)]));
-        Main.notify("before emmit", "before emmit");
         // Main.notify(wmClass, title);
         this._currentTitle = title;
         this._currentWMClass = wmClass;
