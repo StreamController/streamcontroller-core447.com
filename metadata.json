@@ -1,6 +1,6 @@
 {
   "name": "StreamController Integration",
-  "description": "Allow automatic page switching in StreamController",
+  "description": "Allow automatic page switching in StreamController by adding a dbus interface to fetch info about the current window.",
   "uuid": "streamcontroller@core447.com",
   "shell-version": [
     "45",
