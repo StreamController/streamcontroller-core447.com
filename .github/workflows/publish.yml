@@ -3,7 +3,10 @@ name: Publish GNOME Extension
 on:
   push:
     tags:
-      - '*'  # This will trigger the workflow on every tag push
+      - '*'  # Fires on real `git push --tags` from the CLI
+  release:
+    types: [published]  # Fires when a release is published via the GitHub UI,
+                         # since GitHub-UI-created tags don't reliably trigger push events
 
 jobs:
   publish:
