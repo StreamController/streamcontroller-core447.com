@@ -35,4 +35,7 @@ jobs:
         env:
           GEP_USERNAME: ${{ secrets.GEP_USERNAME }}
           GEP_PASSWORD: ${{ secrets.GEP_PASSWORD }}
-        run: gep publish
+        # `gep publish` posts to the legacy /upload/ form endpoint, which
+        # extensions.gnome.org retired in favor of a JSON API at
+        # /api/v1/extensions - see .github/scripts/publish_extension.py
+        run: python .github/scripts/publish_extension.py dist/streamcontroller@core447.com_v*.zip
